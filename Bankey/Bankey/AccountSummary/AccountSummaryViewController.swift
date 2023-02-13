@@ -19,6 +19,7 @@ extension AccountSummaryViewController {
     }
     
     private func setupTableView() {
+        tableView.backgroundColor = appColor
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -40,7 +41,7 @@ extension AccountSummaryViewController {
         let header = AccountSummaryHeaderView(frame: .zero)
         
         var size = header.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
-        size.width = UIScreen.main.bounds.width
+        size.width = UIScreen.main.bounds.width 
         header.frame.size = size
         
         tableView.tableHeaderView = header
