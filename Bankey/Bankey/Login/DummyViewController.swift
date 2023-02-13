@@ -17,7 +17,7 @@ class DummyViewController: UIViewController {
     let label = UILabel()
     let logoutButton = UIButton(type: .system)
     
-    weak var logoutDelegate : LogoutDelegate?
+    var logoutDelegate : LogoutDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
