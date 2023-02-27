@@ -16,6 +16,7 @@ class AccountSummaryViewController: UIViewController {
     let headerView = AccountSummaryHeaderView(frame: .zero)
     let refreshControl = UIRefreshControl()
    
+    let profileManager : ProfileManageable = ProfileManager()
     var isLoaded = false
     
     lazy var logoutBarButtonItem: UIBarButtonItem = {
@@ -122,39 +123,53 @@ extension AccountSummaryViewController {
     private func fetchData() {
         let group = DispatchGroup()
         
-        group.enter()
-        fetchProfile(forUserId: "1") { result in
-            switch result {
-            case .success(let profile):
-                self.profile = profile
-            case .failure(let error):
-                self.displayError(error)
-            }
-            group.leave()
-        }
-        group.enter()
-        fetchAccounts(forUserId: "1") {result in
-            switch result {
-            case .success(let accounts):
-                self.accounts = accounts
-            case .failure(let error):
-                self.displayError(error)
-            }
-            group.leave()
-        }
-        group.notify(queue: .main){
-            self.tableView.refreshControl?.endRefreshing()
-            
-            guard let profile = self.profile else { return }
-           
-            self.isLoaded = true
-            self.configureTableHeaderView(with: profile)
-            self.configureTableCells(with: self.accounts)
-            self.tableView.reloadData()
-            
+        // Testing - random number selection
+        let userId = String(Int.random(in: 1..<4))
+        
+        fetchProfile(group: group, userId: userId)
+        fetchAccounts(group: group, userId: userId)
+        
+        group.notify(queue: .main) {
+            self.reloadView()
         }
     }
     
+    private func fetchProfile(group: DispatchGroup, userId: String) {
+    group.enter()
+    profileManager.fetchProfile(forUserId: userId) { result in
+        switch result {
+        case .success(let profile):
+            self.profile = profile
+        case .failure(let error):
+            self.displayError(error)
+        }
+        group.leave()
+    }
+}
+    
+private func fetchAccounts(group: DispatchGroup, userId: String) {
+    group.enter()
+    fetchAccounts(forUserId: userId) { result in
+        switch result {
+        case .success(let accounts):
+            self.accounts = accounts
+        case .failure(let error):
+            self.displayError(error)
+        }
+        group.leave()
+    }
+}
+    
+private func reloadView() {
+    self.tableView.refreshControl?.endRefreshing()
+    
+    guard let profile = self.profile else { return }
+    
+    self.isLoaded = true
+    self.configureTableHeaderView(with: profile)
+    self.configureTableCells(with: self.accounts)
+    self.tableView.reloadData()
+}
     private func configureTableHeaderView(with profile: Profile) {
         let vm = AccountSummaryHeaderView.ViewModel(welcomeMessage: "Good morning,",
                                                     name: profile.firstName,
