@@ -16,7 +16,15 @@ class AccountSummaryViewController: UIViewController {
     let headerView = AccountSummaryHeaderView(frame: .zero)
     let refreshControl = UIRefreshControl()
    
-    let profileManager : ProfileManageable = ProfileManager()
+    var profileManager : ProfileManageable = ProfileManager()
+    
+    lazy var errorAlert : UIAlertController = {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        return alert
+    }()
+    
+    
     var isLoaded = false
     
     lazy var logoutBarButtonItem: UIBarButtonItem = {
@@ -184,14 +192,10 @@ private func reloadView() {
     }
     
     private func showErrorAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title ,
-                                      message: message,
-                                      preferredStyle: .alert)
+        errorAlert.title = title
+        errorAlert.message = message
         
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
-        present(alert, animated: true, completion: nil)
+        present(errorAlert, animated: true, completion: nil)
     }
     
     private func displayError(_ error : NetworkError) {
@@ -200,10 +204,10 @@ private func reloadView() {
             switch error {
             case .serverError :
                 title = "Server Error"
-                message = "Ensure you are connected to the internet. Please try again."
+                message = "We could not process your request. Please try again."
             case . decodingError :
                 title = "Decoding Error"
-                message = "We could not process your request. Please try again."
+                message = "Ensure you are connected to the internet. Please try again."
         }
         self.showErrorAlert(title: title, message: message)
     }
@@ -227,5 +231,11 @@ extension AccountSummaryViewController {
         profile = nil
         isLoaded = false
         accounts = []
+    }
+}
+// MARK: - Unit Testing
+extension AccountSummaryViewController {
+    func forceFetchProfile() {
+        fetchProfile(group: DispatchGroup(), userId: "1")
     }
 }
