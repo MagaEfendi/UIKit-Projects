@@ -17,7 +17,9 @@ class PasswordCriteriaView: UIView {
     let checkmarkImage = UIImage(systemName: "checkmark.circle")!.withTintColor(.systemGreen, renderingMode: .alwaysOriginal)
     let xmarkImage = UIImage(systemName: "xmark.circle")!.withTintColor(.systemRed, renderingMode: .alwaysOriginal)
     let circleImage = UIImage(systemName: "circle")!.withTintColor(.tertiaryLabel, renderingMode: .alwaysOriginal)
-        
+       
+    
+    
     var criteriaIsMet: Bool = false {
         didSet {
             if criteriaIsMet {
@@ -91,3 +93,4 @@ extension PasswordCriteriaView {
         label.setContentHuggingPriority(UILayoutPriority.defaultLow, for: .horizontal)
     }
 }
+
