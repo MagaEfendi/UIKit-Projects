@@ -127,15 +127,16 @@ extension LoginViewController {
     
     private func login() {
         guard let username = username, let password = password else {
+            assertionFailure("Username / password should never be nil")
             return
         }
         
-        if username.isEmpty || password.isEmpty {
-            configureView(withMessage: "Username / password cannot be blank")
-            return 
-        }
+//        if username.isEmpty || password.isEmpty {
+//            configureView(withMessage: "Username / password cannot be blank")
+//            return 
+//        }
         
-        if username == "Maga" && password == "160" {
+        if username == "" && password == "" {
             signInButton.configuration?.showsActivityIndicator = true
             delegate?.didLogin()
         } else {
