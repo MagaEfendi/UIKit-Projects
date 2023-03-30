@@ -28,6 +28,7 @@ Through the development of these projects, I have gained practical experience wi
 - Creating custom protocols and delegates to facilitate communication between components and modules
 - Writing unit tests using XCTest to ensure the reliability and correctness of the codebase
 - Collaborating with other developers using Git and GitHub to manage code changes and version control.
+
 Overall, these projects have provided me with a solid foundation in iOS app development and have helped me to develop essential skills and expertise that will be valuable for future projects.
 
 
