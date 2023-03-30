@@ -10,9 +10,9 @@ The Bankey app is a simple banking application that allows users to manage their
 
 The Password Reset project is a small utility app that demonstrates how to reset a user's password. The app features a login screen where users can enter their account credentials. If the user has forgotten their password, they can tap on the "Forgot Password" button, which will prompt them to enter their email address. The app will then send an email to the user's email address with instructions on how to reset their password.
 
-## Spotify Player
+## Spotify App
 
-The Spotify Player project is a music player app that allows users to listen to their favorite songs from Spotify. The app features a login screen where users can authenticate with their Spotify account credentials. Once logged in, users can browse their playlists and play their favorite songs. The app also allows users to search for songs, artists, and albums and create new playlists.
+The Spotify App project is a music player app that allows users to listen to their favorite songs from Spotify. The app features a login screen where users can authenticate with their Spotify account credentials. Once logged in, users can browse their playlists and play their favorite songs. The app also allows users to search for songs, artists, and albums and create new playlists.
 
 ## What I Have Learned
 
