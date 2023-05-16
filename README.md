@@ -14,22 +14,24 @@ The Password Reset project is a small utility app that demonstrates how to reset
 
 The Spotify App project is a music player app that allows users to listen to their favorite songs from Spotify. The app features a login screen where users can authenticate with their Spotify account credentials. Once logged in, users can browse their playlists and play their favorite songs. The app also allows users to search for songs, artists, and albums and create new playlists.
 
+## Starbucks App
+
+The Starbucks App is an application that provides users with the ability to order coffee and customize their beverages. It includes features such as browsing the menu, selecting preferred options, placing orders, and locating nearby Starbucks stores. Users can also manage their payment methods and view order history.
+
 ## What I Have Learned
 
-Through the development of these projects, I have gained practical experience with various aspects of iOS app development, including:
+Throughout the development of these projects, I have acquired valuable knowledge and skills in iOS app development:
 
-- Designing and implementing user interfaces using UIKit components such as buttons, labels, text fields, table views, and collection views
-- Building responsive and adaptable user interfaces with Auto Layout and Size Classes
-- Integrating network calls with RESTful APIs to retrieve and display data in real-time
-- Implementing user authentication and authorization using OAuth2 and Keychain services
-- Storing and retrieving data locally with Core Data and UserDefaults
-- Creating custom views and animations using Core Animation and UIViewPropertyAnimator
-- Implementing push notifications using Apple Push Notification Service (APNS)
-- Creating custom protocols and delegates to facilitate communication between components and modules
-- Writing unit tests using XCTest to ensure the reliability and correctness of the codebase
-- Collaborating with other developers using Git and GitHub to manage code changes and version control.
+Designing user interfaces using various UIKit components, including buttons, labels, text fields, table views, and collection views.
+Creating responsive and adaptive layouts using Auto Layout and Size Classes to ensure proper display across different device sizes and orientations.
+Integrating with RESTful APIs to retrieve and display real-time data, such as account balances, transaction history, and music tracks.
+Implementing secure authentication and authorization using OAuth2 and Keychain services to protect user data.
+Utilizing local data storage techniques such as Core Data and UserDefaults for efficient data management and persistence.
+Creating custom views and animations using Core Animation and UIViewPropertyAnimator to enhance the visual appeal and interactivity of the app.
+Implementing push notifications using Apple Push Notification Service (APNS) to engage users with timely updates and promotions.
+Establishing communication between components and modules through custom protocols and delegates for seamless interaction and data transfer.
+Applying version control with Git and GitHub to facilitate collaboration, track code changes, and manage project milestones.
 
-Overall, these projects have provided me with a solid foundation in iOS app development and have helped me to develop essential skills and expertise that will be valuable for future projects.
-
+These projects have provided me with a strong foundation in iOS app development, enabling me to create engaging and functional applications while incorporating best practices and industry-standard techniques.
 
 
