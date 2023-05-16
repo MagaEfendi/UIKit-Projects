@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14CEBBEF2A138C2600088BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBBEE2A138C2600088BEA /* AppDelegate.swift */; };
+		14CEBBF32A138C2600088BEA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBBF22A138C2600088BEA /* HomeViewController.swift */; };
+		14CEBBF62A138C2600088BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CEBBF42A138C2600088BEA /* Main.storyboard */; };
+		14CEBBF82A138C2700088BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CEBBF72A138C2700088BEA /* Assets.xcassets */; };
+		14CEBC042A138C7500088BEA /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC032A138C7500088BEA /* Factories.swift */; };
+		14CEBC072A138CDC00088BEA /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC062A138CDC00088BEA /* HomeHeaderView.swift */; };
+		14CEBC092A138CF700088BEA /* PlaceHolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC082A138CF700088BEA /* PlaceHolderViewController.swift */; };
+		14CEBC0B2A138D0900088BEA /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC0A2A138D0900088BEA /* TileViewController.swift */; };
+		14CEBC0D2A138D1700088BEA /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC0C2A138D1700088BEA /* TileView.swift */; };
+		14CEBC112A138D5700088BEA /* StarAndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC102A138D5700088BEA /* StarAndPoints.swift */; };
+		14CEBC132A138D6D00088BEA /* StarRewardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC122A138D6D00088BEA /* StarRewardsRow.swift */; };
+		14CEBC152A138D8200088BEA /* StarRewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC142A138D8200088BEA /* StarRewardsView.swift */; };
+		14CEBC172A138E2300088BEA /* RewardsTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC162A138E2300088BEA /* RewardsTileViewController.swift */; };
+		14CEBC192A138E3000088BEA /* RewardsTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC182A138E3000088BEA /* RewardsTileView.swift */; };
+		14CEBC1B2A138E4700088BEA /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC1A2A138E4700088BEA /* BalanceView.swift */; };
+		14CEBC1D2A138E5500088BEA /* RewardsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC1C2A138E5500088BEA /* RewardsGraphView.swift */; };
+		14CEBC1F2A138E7F00088BEA /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC1E2A138E7F00088BEA /* GiftViewController.swift */; };
+		14CEBC212A138E8D00088BEA /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC202A138E8D00088BEA /* StoreViewController.swift */; };
+		14CEBC232A138E9C00088BEA /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC222A138E9C00088BEA /* ScanViewController.swift */; };
+		14CEBC252A138EAD00088BEA /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC242A138EAD00088BEA /* OrderViewController.swift */; };
+		14CEBC282A139C3F00088BEA /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC272A139C3F00088BEA /* HistoryViewController.swift */; };
+		14CEBC2A2A139C6500088BEA /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC292A139C6500088BEA /* HistoryService.swift */; };
+		14CEBC2C2A139C8F00088BEA /* HistoryTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC2B2A139C8F00088BEA /* HistoryTransactions.swift */; };
+		14CEBC2E2A139CA500088BEA /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC2D2A139CA500088BEA /* HistoryViewCell.swift */; };
+		14CEBC302A139CBE00088BEA /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEBC2F2A139CBE00088BEA /* HistoryViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14CEBBEB2A138C2600088BEA /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14CEBBEE2A138C2600088BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14CEBBF22A138C2600088BEA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		14CEBBF52A138C2600088BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14CEBBF72A138C2700088BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14CEBBFC2A138C2700088BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14CEBC032A138C7500088BEA /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		14CEBC062A138CDC00088BEA /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		14CEBC082A138CF700088BEA /* PlaceHolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderViewController.swift; sourceTree = "<group>"; };
+		14CEBC0A2A138D0900088BEA /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
+		14CEBC0C2A138D1700088BEA /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		14CEBC102A138D5700088BEA /* StarAndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAndPoints.swift; sourceTree = "<group>"; };
+		14CEBC122A138D6D00088BEA /* StarRewardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsRow.swift; sourceTree = "<group>"; };
+		14CEBC142A138D8200088BEA /* StarRewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsView.swift; sourceTree = "<group>"; };
+		14CEBC162A138E2300088BEA /* RewardsTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileViewController.swift; sourceTree = "<group>"; };
+		14CEBC182A138E3000088BEA /* RewardsTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileView.swift; sourceTree = "<group>"; };
+		14CEBC1A2A138E4700088BEA /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		14CEBC1C2A138E5500088BEA /* RewardsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsGraphView.swift; sourceTree = "<group>"; };
+		14CEBC1E2A138E7F00088BEA /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
+		14CEBC202A138E8D00088BEA /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		14CEBC222A138E9C00088BEA /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		14CEBC242A138EAD00088BEA /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		14CEBC272A139C3F00088BEA /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		14CEBC292A139C6500088BEA /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		14CEBC2B2A139C8F00088BEA /* HistoryTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactions.swift; sourceTree = "<group>"; };
+		14CEBC2D2A139CA500088BEA /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
+		14CEBC2F2A139CBE00088BEA /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14CEBBE82A138C2600088BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14CEBBE22A138C2600088BEA = {
+			isa = PBXGroup;
+			children = (
+				14CEBBED2A138C2600088BEA /* Starbucks */,
+				14CEBBEC2A138C2600088BEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14CEBBEC2A138C2600088BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14CEBBEB2A138C2600088BEA /* Starbucks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14CEBBED2A138C2600088BEA /* Starbucks */ = {
+			isa = PBXGroup;
+			children = (
+				14CEBBFC2A138C2700088BEA /* Info.plist */,
+				14CEBBEE2A138C2600088BEA /* AppDelegate.swift */,
+				14CEBC032A138C7500088BEA /* Factories.swift */,
+				14CEBC022A138C3800088BEA /* Files */,
+				14CEBC052A138CBC00088BEA /* Home */,
+			);
+			path = Starbucks;
+			sourceTree = "<group>";
+		};
+		14CEBC022A138C3800088BEA /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				14CEBBF72A138C2700088BEA /* Assets.xcassets */,
+				14CEBBF42A138C2600088BEA /* Main.storyboard */,
+				14CEBC1E2A138E7F00088BEA /* GiftViewController.swift */,
+				14CEBC202A138E8D00088BEA /* StoreViewController.swift */,
+				14CEBC222A138E9C00088BEA /* ScanViewController.swift */,
+				14CEBC242A138EAD00088BEA /* OrderViewController.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		14CEBC052A138CBC00088BEA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				14CEBC262A139C2900088BEA /* History */,
+				14CEBBF22A138C2600088BEA /* HomeViewController.swift */,
+				14CEBC062A138CDC00088BEA /* HomeHeaderView.swift */,
+				14CEBC082A138CF700088BEA /* PlaceHolderViewController.swift */,
+				14CEBC0A2A138D0900088BEA /* TileViewController.swift */,
+				14CEBC0C2A138D1700088BEA /* TileView.swift */,
+				14CEBC0F2A138D3600088BEA /* Rewards */,
+				14CEBC0E2A138D2900088BEA /* StarRewards */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		14CEBC0E2A138D2900088BEA /* StarRewards */ = {
+			isa = PBXGroup;
+			children = (
+				14CEBC102A138D5700088BEA /* StarAndPoints.swift */,
+				14CEBC122A138D6D00088BEA /* StarRewardsRow.swift */,
+				14CEBC142A138D8200088BEA /* StarRewardsView.swift */,
+			);
+			path = StarRewards;
+			sourceTree = "<group>";
+		};
+		14CEBC0F2A138D3600088BEA /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				14CEBC162A138E2300088BEA /* RewardsTileViewController.swift */,
+				14CEBC182A138E3000088BEA /* RewardsTileView.swift */,
+				14CEBC1A2A138E4700088BEA /* BalanceView.swift */,
+				14CEBC1C2A138E5500088BEA /* RewardsGraphView.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		14CEBC262A139C2900088BEA /* History */ = {
+			isa = PBXGroup;
+			children = (
+				14CEBC272A139C3F00088BEA /* HistoryViewController.swift */,
+				14CEBC292A139C6500088BEA /* HistoryService.swift */,
+				14CEBC2B2A139C8F00088BEA /* HistoryTransactions.swift */,
+				14CEBC2D2A139CA500088BEA /* HistoryViewCell.swift */,
+				14CEBC2F2A139CBE00088BEA /* HistoryViewModel.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14CEBBEA2A138C2600088BEA /* Starbucks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14CEBBFF2A138C2700088BEA /* Build configuration list for PBXNativeTarget "Starbucks" */;
+			buildPhases = (
+				14CEBBE72A138C2600088BEA /* Sources */,
+				14CEBBE82A138C2600088BEA /* Frameworks */,
+				14CEBBE92A138C2600088BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starbucks;
+			productName = Starbucks;
+			productReference = 14CEBBEB2A138C2600088BEA /* Starbucks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14CEBBE32A138C2600088BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					14CEBBEA2A138C2600088BEA = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 14CEBBE62A138C2600088BEA /* Build configuration list for PBXProject "Starbucks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14CEBBE22A138C2600088BEA;
+			productRefGroup = 14CEBBEC2A138C2600088BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14CEBBEA2A138C2600088BEA /* Starbucks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14CEBBE92A138C2600088BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CEBBF82A138C2700088BEA /* Assets.xcassets in Resources */,
+				14CEBBF62A138C2600088BEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14CEBBE72A138C2600088BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CEBC212A138E8D00088BEA /* StoreViewController.swift in Sources */,
+				14CEBC172A138E2300088BEA /* RewardsTileViewController.swift in Sources */,
+				14CEBC2A2A139C6500088BEA /* HistoryService.swift in Sources */,
+				14CEBC112A138D5700088BEA /* StarAndPoints.swift in Sources */,
+				14CEBC302A139CBE00088BEA /* HistoryViewModel.swift in Sources */,
+				14CEBC132A138D6D00088BEA /* StarRewardsRow.swift in Sources */,
+				14CEBC072A138CDC00088BEA /* HomeHeaderView.swift in Sources */,
+				14CEBC0D2A138D1700088BEA /* TileView.swift in Sources */,
+				14CEBC092A138CF700088BEA /* PlaceHolderViewController.swift in Sources */,
+				14CEBC2C2A139C8F00088BEA /* HistoryTransactions.swift in Sources */,
+				14CEBC2E2A139CA500088BEA /* HistoryViewCell.swift in Sources */,
+				14CEBC232A138E9C00088BEA /* ScanViewController.swift in Sources */,
+				14CEBC0B2A138D0900088BEA /* TileViewController.swift in Sources */,
+				14CEBC042A138C7500088BEA /* Factories.swift in Sources */,
+				14CEBC152A138D8200088BEA /* StarRewardsView.swift in Sources */,
+				14CEBC192A138E3000088BEA /* RewardsTileView.swift in Sources */,
+				14CEBBF32A138C2600088BEA /* HomeViewController.swift in Sources */,
+				14CEBBEF2A138C2600088BEA /* AppDelegate.swift in Sources */,
+				14CEBC1D2A138E5500088BEA /* RewardsGraphView.swift in Sources */,
+				14CEBC1F2A138E7F00088BEA /* GiftViewController.swift in Sources */,
+				14CEBC282A139C3F00088BEA /* HistoryViewController.swift in Sources */,
+				14CEBC1B2A138E4700088BEA /* BalanceView.swift in Sources */,
+				14CEBC252A138EAD00088BEA /* OrderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14CEBBF42A138C2600088BEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14CEBBF52A138C2600088BEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14CEBBFD2A138C2700088BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14CEBBFE2A138C2700088BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14CEBC002A138C2700088BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Starbucks/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlayk.Starbucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14CEBC012A138C2700088BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Starbucks/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlayk.Starbucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14CEBBE62A138C2600088BEA /* Build configuration list for PBXProject "Starbucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CEBBFD2A138C2700088BEA /* Debug */,
+				14CEBBFE2A138C2700088BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14CEBBFF2A138C2700088BEA /* Build configuration list for PBXNativeTarget "Starbucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CEBC002A138C2700088BEA /* Debug */,
+				14CEBC012A138C2700088BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14CEBBE32A138C2600088BEA /* Project object */;
+}
